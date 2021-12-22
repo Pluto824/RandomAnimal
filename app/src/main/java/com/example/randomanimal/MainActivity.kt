@@ -25,11 +25,11 @@ class MainActivity : AppCompatActivity() {
         val show = findViewById<ImageView>(R.id.showview) //画像を表示するImageView
         val image_drawable = ResourcesCompat.getDrawable(getResources(), R.drawable.stop, null); //待機時画像設定
         val btn = findViewById<Button>(R.id.button) //抽選ボタン
-
         val url = listOf("https://dog.ceo/api/breeds/image/random",
             "https://thatcopy.pw/catapi/rest/","https://randomfox.ca/floof/") //URL一覧
         val animal_name = listOf("イヌ","ネコ","キツネ") //名前一覧
         val client = OkHttpClient()
+
         btn.setOnClickListener { //ボタンが押されたら
             show.setImageDrawable(image_drawable)
             val random = url.indices.random() //乱数生成
