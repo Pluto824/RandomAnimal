@@ -11,3 +11,5 @@
 ### アプリ内画像
 
 * いらすとや：https://www.irasutoya.com/
+
+apkファイルは、app/release/app-release.apkをダウンロードしてインストールお願いします。
